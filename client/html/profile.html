@@ -1,0 +1,21 @@
+<h3>Profile</h3>
+
+
+<div class="wrapper" ng-show='currentUser.businesses.length'>
+  <table class='table'>
+    <tbody>
+      <tr ng-repeat='business in currentUser.businesses'>
+        <td>
+          {{ business.name }}
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm" ui-sref='businessShow( { yelpId: business.yelpId } )'>See more info</button>
+        </td>
+        <td>
+          <a ng-click="deleteFavorite(business)">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </a>
+        </td>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,32 @@
+<h3>Search</h3>
+
+<div class="wrapper">
+  <form ng-submit='submit()' name='uploadForm' class='form'>
+    <div class="form-group">
+      <input type="text" ng-model='params.term' placeholder='Term (e.g., food)'>
+      <input type="text" ng-model='params.loc' placeholder='City (e.g., Fremont)'>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-default btn-sm">Submit</button>
+    </div>
+  </form>
+</div>
+
+<div class="wrapper" ng-show='businesses.length'>
+  <h3>Top 20</h3>
+  <table class='table table-no-border'>
+    <tbody>
+      <tr ng-repeat='business in businesses'>
+      <td>
+        <a ui-sref='businessShow( { yelpId: business.id } )'>
+          {{ business.name }}
+        </a>
+      </td>
+      <td ng-if='isAuthenticated()'>
+        <a ng-click="addFavorite(business)">
+          <i class="fa fa-child child" aria-hidden="true"></i>
+        </a>
+      </td>
+    </tbody>
+  </table>
+</div>

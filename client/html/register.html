@@ -1,0 +1,15 @@
+<div class="registerLogin">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <h1>Register</h1>
+
+      <form class="form-horizontal" ng-submit='register()'>
+        <input type="email" class="form-control" placeholder="Email" ng-model='user.email'>
+        <input type="password" class="form-control" placeholder="Password" ng-model='user.password'>
+        <input type="password" class="form-control" placeholder="Password (again)" ng-model='user.password2'>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Sign me up</button>
+        <button type='button' class="btn btn-primary btn-block btn-large" ng-click='authenticate("facebook")'><i class="fa fa-facebook-square" aria-hidden="true"></i> Login with Facebook</button>
+      </form>
+    </div>
+  </div>
+</div>

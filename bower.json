@@ -1,0 +1,33 @@
+{
+  "name": "fullstack-template",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "nikhilram00@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "angular-moment": "^0.10.3",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap-sweetalert": "^1.0.0",
+    "font-awesome": "^4.6.3",
+    "satellizer": "^0.14.1",
+    "bootswatch-dist": "paper",
+    "ng-file-upload": "^12.0.4",
+    "animate.css": "^3.5.2"
+  },
+  "resolutions": {
+    "angular": "^1.5.7"
+  }
+}

@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <h3><a href="{{ business.url }}" target='_blank'>{{business.name}}</a> <small><i class="fa fa-child child" aria-hidden="true"></i> {{ numOfFavorites }}</small></h3>
+  <img class='thumbnail center-block' ng-src="{{ business.image_url }}" alt="Picture of {{ business.name }}">
+  <img class = 'center-block' ng-src="{{ business.rating_img_url_small }}" alt="Rating: {{ business.rating }}">
+ 
+  <br>
+  <div>
+    {{ business.location.display_address.join(' ') }}
+  </div>
+  <div>
+    {{ business.display_phone }}
+  </div>
+  <div>
+    <a class="btn btn-primary btn-sm" href="{{ business.url }}" target='_blank'>Go To Yelp Page</a>
+  </div>
+</div>
